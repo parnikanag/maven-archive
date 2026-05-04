@@ -20,7 +20,6 @@ pipeline {
 
     post {
         success {
-            // Archives the generated JAR file so you can download it from Jenkins
             archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
         }
     }
